@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Atributos de RPG - GURPS 4ª Ed.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Atributos de RPG - GURPS 4ª Ed.</h1>
+        <form id="rpgForm">
+            <label for="st">ST (Força):</label>
+            <input type="number" id="st" name="st" required>
+            <label for="dx">DX (Destreza):</label>
+            <input type="number" id="dx" name="dx" required>
+            <label for="iq">IQ (Inteligência):</label>
+            <input type="number" id="iq" name="iq" required>
+            <label for="ht">HT (Saúde):</label>
+            <input type="number" id="ht" name="ht" required>
+            <button type="button" onclick="generateSheet()">Calcular Atributos</button>
+        </form>
+        <div id="characterSheet">
+            <h2>Atributos Básicos</h2>
+            <p><strong>ST:</strong> <span id="displayST"></span></p>
+            <p><strong>DX:</strong> <span id="displayDX"></span></p>
+            <p><strong>IQ:</strong> <span id="displayIQ"></span></p>
+            <p><strong>HT:</strong> <span id="displayHT"></span></p>
+
+            <h2>Atributos Secundários</h2>
+            <p><strong>HP:</strong> <span id="displayHP"></span></p>
+            <p><strong>Von:</strong> <span id="displayVon"></span></p>
+            <p><strong>Per:</strong> <span id="displayPer"></span></p>
+            <p><strong>PF:</strong> <span id="displayPF"></span></p>
+
+            <h2>Outras Características</h2>
+            <p><strong>BC:</strong> <span id="displayBC"></span></p>
+            <p><strong>Vel. Bás.:</strong> <span id="displayVelBas"></span></p>
+            <p><strong>DB:</strong> <span id="displayDB"></span></p>
+            <p><strong>Esquiva:</strong> <span id="displayEsq"></span></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
