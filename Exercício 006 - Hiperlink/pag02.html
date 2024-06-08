@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Marcus-Roberto-Google-Play-Google-Play-Books.ico" type="image/x-icon">
+    <title>Formatação de Texto</title>
+</head>
+<body>
+    <h1>Formatação Correta de Textos</h1>
+    <h2><strong>Negrito</strong></h2>
+    <p>Há duas maneira de colocar em Negrito, com bold &lt;b&gt;, mas não há informação semântica envolvida; a outra maneira é com &lt;strong&gt;, que possui informação semântica. Recomenda-se o uso de &lt;strong&gt;.</p>
+    <h2><EM>Itálico</EM></h2>
+    <p>Usar a tag &lt;i&gt; faz a alteração sem informação semântica; preferível usar &lt;EM&gt;.</p>
+    <h2><mark>Texto Marcado</mark></h2>
+    <p>A tag &lt;mark&gt; serve para colocar uma marcação como se fosse uma caneta marca-texto. A cor da marcação pode ser alterada por meio de uma alteração de estilo com 'style="', mas pode ser feito um estilo em CSS para alterar todos os mark's.</p>
+    <h2>Texto Normal e <small>Texto Pequeno</small></h2>
+    <p>Para o HTML, ainda há diferença entre um texto normal (que pode ser aumentdo no CSS) e o Texto Pequeno, que é cercado pela tag &lt;small&gt;. Para casos de apenas ser uma questão de estilo, as alterações devem ser feitas via CSS.</p>
+    <h2><del>Texto Deletado</del> e <ins>Texto Inserido</ins></h2>
+    <p>Para indicar um texto "riscado", a palavra ou termo deve estar cercado de &lt;del&gt;; para indicar que uma lacuna foi preenchida, como em um formulário, a palavra ou termo deve estar cercado de &lt;ins&gt;.</p>
+    <h2>Sobrescrito e Subscrito</h2>
+    <p>Para Sobrescrito, &lt;sup&gt;,e para Subscrito, &lt;sub&gt;</p>
+    <h2>Outras Formatações</h2>
+    <p>Pode-se fazer uma formatação como a que aparece no código-fonte, usando &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;, sem a tag de parágrafo.</p>
+    <h3>Exemplo de Texto formatado como Código:</h3>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0;
+        print(f'O número {num} é par')
+    else:
+        print(f'O número {num} é ímpar')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Usar aspas não é semanticamente uma citação, para tal, deve-se usar a tag &lt;q&gt;, por exemplo: <q>Paulo disse que não está sendo tão difícil quanto parecia.</q></p>
+    <p>Para citações longas, o ideal seia usar &lt;blockquote cite='LINK DA CITAÇÃO PARA FACILITAR A LEITURA DOS BUSCADORES'&gt;, exemplo: <blockquote cite="https://www.facebook.com/groups/868636826508919/?multi_permalinks=7725125444193322&notif_id=1717599905740041&notif_t=feedback_reaction_generic&ref=notif">A sinonímia é um fenômeno linguístico característico da Semântica e ocorre quando duas ou mais palavras possuem significados semelhantes ou idênticos. Essas palavras são conhecidas como sinônimos. A sinonímia desempenha um papel crucial na comunicação, pois permite a variação lexical, enriquecendo o discurso e evitando repetições desnecessárias.</blockquote></p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML?</bdo></p>
+
+</body>
+</html>
